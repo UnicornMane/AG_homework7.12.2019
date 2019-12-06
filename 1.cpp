@@ -7,7 +7,7 @@ using namespace std;
 
 double f(double& x)
 {
-	return pow(x, 11) + 56 * x + 7;
+	return x * x * x  - x * x  - 1;
 }
 
 auto main() -> int
@@ -27,5 +27,5 @@ auto main() -> int
 			l = m;
 		}
 	}
-	cout << setprecision(56) << fixed << l;
+	cout << setprecision(15) << fixed << l;
 }
